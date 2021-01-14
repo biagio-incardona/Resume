@@ -17,6 +17,19 @@
     z-index: 999;
 }
 
+.bnavbar {
+    background-color: #fafafa;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 .navbar__container {
     display: flex;
     justify-content: space-between;
@@ -27,6 +40,18 @@
     margin: 0 auto;
     padding: 0 50px;
 }
+
+.bnavbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 500%;
+}
+
 
 #navbar__logo {
     background-color: #7781ff;
@@ -54,8 +79,16 @@
     list-style: none;
     text-align: center;
 }
-
+.bnavbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
 .navbar__item {
+    height: 80px;
+}
+.bnavbar__item {
     height: 80px;
 }
 
@@ -68,7 +101,17 @@
     padding: 0 1rem;
     height: 100%;
     white-space: nowrap;    
+}
 
+.bnavbar__links {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    white-space: nowrap;    
 }
 
 .navbar__btn {
@@ -77,6 +120,15 @@
     align-items: center;
     padding: 0 1rem;
     width: 100%;
+}
+
+.bnavbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    float: left;
 }
 
 .button {
@@ -94,12 +146,46 @@
     color: #fff;
 }
 
+.bbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 50px 70px;
+    height: 0%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #4837ff;   
+    color: #fff;
+    float:left;
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+
 .button:hover {
     background: #f77862;
     transition: all 0.3s ease;
 }
 
+#navbar__logo:hover {
+    background-image: linear-gradient(to top, #f77862 0%, #00ff9d 100%);
+    transition: all 0.3s ease;
+}
+
+.bbutton:hover {
+    background: #f77862;
+    transition: all 0.3s ease;
+}
+
 .navbar__links:hover {
+    color: #4837ff;
+    transition: all 0.3s ease;
+}
+
+.bnavbar__links:hover {
     color: #4837ff;
     transition: all 0.3s ease;
 }
